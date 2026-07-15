@@ -43,6 +43,7 @@ int main() {
 
 🛠️ API Reference
 
+```Table
 Method,Description
 "Matrix(size_t rows, size_t cols)",Initializes a matrix of the given size with zeros.
 randomize(),Fills the matrix with uniform random values between -0.1 and 0.1.
@@ -55,6 +56,7 @@ map(std::function func),Applies a lambda function to every element and returns t
 add(const Matrix& target),Performs element-wise addition.
 print(),Prints the matrix to the console for debugging.
 "at(r, c)",Returns a reference to the element at the specified row and column.
+```
 
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
