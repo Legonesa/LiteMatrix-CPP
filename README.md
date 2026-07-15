@@ -41,22 +41,21 @@ int main() {
 }
 ```
 
-🛠️ API Reference
+## 🛠️ API Reference
 
-```Sheet
-Method,Description
-"Matrix(size_t rows, size_t cols)",Initializes a matrix of the given size with zeros.
-randomize(),Fills the matrix with uniform random values between -0.1 and 0.1.
-"randomizeXavier(fanIn, fanOut)",Fills the matrix using Xavier initialization.
-multiply(const Matrix& target),Returns a new matrix that is the dot product of this and the target.
-transpose(),Returns a new matrix with swapped rows and columns.
-map(std::function func),Applies a lambda function to every element and returns the result.
-"slice(r_off, c_off, r_take, c_take)",Extracts and returns a specific sub-matrix.
-"concatenate(Matrix A, Matrix B, axis)",Merges two matrices vertically (axis=0) or horizontally (axis=1).
-add(const Matrix& target),Performs element-wise addition.
-print(),Prints the matrix to the console for debugging.
-"at(r, c)",Returns a reference to the element at the specified row and column.
-```
+| Method | Description |
+| :--- | :--- |
+| `Matrix(size_t rows, size_t cols)` | Initializes a matrix of the given size with zeros. |
+| `randomize()` | Fills the matrix with uniform random values between -0.1 and 0.1. |
+| `randomizeXavier(fanIn, fanOut)` | Fills the matrix using Xavier initialization. |
+| `multiply(const Matrix& target)` | Returns a new matrix that is the dot product of this and the target. |
+| `transpose()` | Returns a new matrix with swapped rows and columns. |
+| `map(std::function func)` | Applies a lambda function to every element and returns the result. |
+| `slice(r_off, c_off, r_take, c_take)` | Extracts and returns a specific sub-matrix. |
+| `concatenate(Matrix A, Matrix B, axis)`| Merges two matrices vertically (`axis=0`) or horizontally (`axis=1`). |
+| `add(const Matrix& target)` | Performs element-wise addition. |
+| `print()` | Prints the matrix to the console for debugging. |
+| `at(r, c)` | Returns a reference to the element at the specified row and column. |
 
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
