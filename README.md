@@ -43,7 +43,7 @@ int main() {
 
 🛠️ API Reference
 
-```Table
+```Sheet
 Method,Description
 "Matrix(size_t rows, size_t cols)",Initializes a matrix of the given size with zeros.
 randomize(),Fills the matrix with uniform random values between -0.1 and 0.1.
